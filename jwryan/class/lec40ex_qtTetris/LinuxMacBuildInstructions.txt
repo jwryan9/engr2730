@@ -1,0 +1,16 @@
+Assumption: qt libraries are installed on your system
+
+Building on linux:
+$qmake -project
+$qmake
+$make
+
+Building on mac (creates xcode project by default):
+$qmake -project
+$qmake 
+[use xcode to finish building]
+
+Building on mac (to force qmake to create makefile):
+$qmake -project
+$qmake -spec macx-g++
+$make
